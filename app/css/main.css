@@ -7,6 +7,10 @@
           box-sizing: border-box;
 }
 
+body {
+  position: relative;
+}
+
 .headers {
   background-color: #022E5D;
 }
@@ -227,15 +231,16 @@
   text-align: center;
 }
 
-.singin .btnsubmit a {
+.singin .btnsubmit button {
   display: inline-block;
   padding: 0.6em 2em;
   background-color: #A12443;
   border-radius: 0.5em;
   color: #fff;
+  border: none;
 }
 
-.singin .btnsubmit a:hover {
+.singin .btnsubmit button:hover {
   text-decoration: none;
   opacity: 0.8;
 }
@@ -264,5 +269,274 @@
 
 .footer .link ul li a {
   font-size: 2em;
+}
+
+#singform {
+  position: fixed;
+  right: 2%;
+  top: 50%;
+  padding: 2em 1.8em;
+  background-color: red;
+  color: #fff;
+  border-radius: 50%;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  -webkit-animation: text-flicker 3s linear infinite;
+          animation: text-flicker 3s linear infinite;
+  font-weight: 600;
+}
+
+#singform:hover {
+  text-decoration: none;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
+
+@-webkit-keyframes text-flicker {
+  0% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  2% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  8% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  9% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  12% {
+    opacity: 0.1;
+    text-shadow: 0px 0px #f21616;
+  }
+  20% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  25% {
+    opacity: 0.3;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  30% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  70% {
+    opacity: 0.7;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  72% {
+    opacity: 0.2;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  77% {
+    opacity: .9;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  100% {
+    opacity: .9;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  2% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  8% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  9% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  12% {
+    opacity: 0.1;
+    text-shadow: 0px 0px #f21616;
+  }
+  20% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  25% {
+    opacity: 0.3;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  30% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  70% {
+    opacity: 0.7;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  72% {
+    opacity: 0.2;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  77% {
+    opacity: .9;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  100% {
+    opacity: .9;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+}
+
+@-webkit-keyframes border-flicker {
+  0% {
+    opacity: 0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+    box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+  }
+  2% {
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+    box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+  }
+  4% {
+    opacity: 0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+    box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+  }
+  8% {
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+    box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+  }
+  70% {
+    opacity: 0.7;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+    box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+  }
+  100% {
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+    box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+  }
+}
+
+@keyframes border-flicker {
+  0% {
+    opacity: 0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+    box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+  }
+  2% {
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+    box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+  }
+  4% {
+    opacity: 0.1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+    box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+  }
+  8% {
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+    box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+  }
+  70% {
+    opacity: 0.7;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+    box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+  }
+  100% {
+    opacity: 1;
+    -webkit-box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+    box-shadow: 0px 0px 78px 4px rgba(16, 134, 232, 0.73);
+  }
+}
+
+@-webkit-keyframes letter-flicker {
+  0% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  2% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  4% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  19% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  21% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  23% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  80% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  83% {
+    opacity: 0.4;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  87% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+}
+
+@keyframes letter-flicker {
+  0% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  2% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  4% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  19% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  21% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  23% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  80% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  83% {
+    opacity: 0.4;
+    text-shadow: 0px 0px 29px #f21616;
+  }
+  87% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #f21616;
+  }
 }
 /*# sourceMappingURL=main.css.map */
