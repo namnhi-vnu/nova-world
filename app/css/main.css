@@ -248,6 +248,7 @@ body {
 .footer {
   padding: 5em 0;
   background-color: #001F3E;
+  color: #fff;
 }
 
 .footer .link ul {
@@ -269,6 +270,62 @@ body {
 
 .footer .link ul li a {
   font-size: 2em;
+}
+
+.footer .forms {
+  margin-top: 2em;
+}
+
+.footer .forms h2 {
+  text-align: center;
+  color: #faeb9c;
+  font-weight: 200;
+}
+
+.footer .forms .form-groups {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+  position: relative;
+  padding-top: 1em;
+  color: #faeb9c;
+}
+
+.footer .forms .form-groups label {
+  display: block;
+}
+
+.footer .forms .form-groups input {
+  width: 100%;
+  padding: 0.5em 0 0.5em 0.2em;
+  border: none;
+  background-color: #012D59;
+  color: #fff;
+}
+
+.footer .forms .form-groups input:focus {
+  outline: none;
+}
+
+.footer .forms .btnsubmit {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.footer .forms .btnsubmit button {
+  display: inline-block;
+  padding: 0.6em 2em;
+  background-color: #A12443;
+  border-radius: 0.5em;
+  color: #fff;
+  border: none;
+}
+
+.footer .forms .btnsubmit button:hover {
+  text-decoration: none;
+  opacity: 0.8;
 }
 
 #singform {
