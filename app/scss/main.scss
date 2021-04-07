@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=New+Tegomin&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// Start Header
+
+.headers {
+    background-color: #022E5D;
+
+    &__navbar {
+        img {
+            width: 30%;
+        }
+
+        text-align: center;
+    }
+
+    &__video {
+        height: 100vh;
+        display: flex;
+        //align-items: center;
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: bottom center;
+
+    }
+
+    &__videoitem {
+        object-fit: initial;
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+    }
+
+    &__desc {
+        padding: 4em 0;
+        background-image: radial-gradient(circle, #C76063, #A12443);
+
+        position: relative;
+        color: #fff;
+
+
+        .desc-content {
+            width: 800px;
+            max-width: 100%;
+            margin: 0 auto;
+            text-align: center;
+
+            h3 {
+
+                font-size: 3em;
+                font-family: 'Lobster',
+                    cursive;
+                padding-bottom: 1em;
+            }
+        }
+    }
+
+    &__boxIntro {
+        padding-top: 1em;
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1em;
+        }
+
+        li {
+            display: inline;
+            padding: 1em;
+            transition: all linear 0.2s;
+            background-color: #022E5D;
+
+
+            h4 {
+                font-size: 2.5em;
+
+                span {
+                    font-size: 0.5em;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                transition: all linear 0.3s;
+            }
+
+        }
+    }
+}
+
+// End Header
+// Start Main
+.main {
+    background-image: url('../images/KV-NOVAWORLD-PHAN-THIET-Florida.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    &__content {
+        padding-top: 8em;
+
+        div {
+            padding: 1em;
+            width: 25em;
+            max-width: 100%;
+            border-radius: 0.5em;
+
+            background-color: rgba(255, 255, 255, 0.5);
+
+            h2 {
+                font-family: 'New Tegomin',
+                    serif;
+                font-size: 2em;
+                padding-bottom: 1em;
+            }
+
+            p {
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+
+// End Main
+// Maps
+.mapss {
+    background-image: url('../images/MB-TIEN-ICH-NVW-PT-17.11.2020-02-02.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130vh;
+}
+
+.maps {
+    background-image: url('../images/Ban-Do-NVWPT-2303.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+// 
+.sliders {
+    box-sizing: border-box;
+    padding: 2em 2em;
+    background-image: linear-gradient(top, #FBFCDE, #FCFCFD);
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        div {
+            h3 {
+                font-size: 2.2em;
+                color: #A12443;
+            }
+
+            span {
+                border: 1px solid #A12443;
+                display: block;
+                height: 5em;
+                width: 1px;
+                background-color: #A12443;
+            }
+
+            p {
+                padding-top: 0.5em;
+                line-height: 1.8em
+            }
+        }
+    }
+}
+
+.singin {
+    padding: 3rem 0 7rem 0;
+    background-image: url('/app/images/banner-4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .forms {
+
+        h2 {
+            text-align: center;
+            color: #cdae87;
+        }
+    }
+
+    .form-form {
+
+        padding: 3em;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .form-groups {
+        padding-top: 1em;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        position: relative;
+
+        div {
+            label {
+                display: block;
+            }
+
+            input {
+                width: 100%;
+                padding: 0.5em 0 0.5em 0.2em;
+                border: none;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+        }
+    }
+
+    .btnsubmit {
+        margin-top: 2em;
+        text-align: center;
+
+        a {
+            display: inline-block;
+            padding: 0.6em 2em;
+            background-color: #A12443;
+            border-radius: 0.5em;
+            color: #fff;
+
+            &:hover {
+                text-decoration: none;
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+.footer {
+    padding: 5em 0;
+    background-color: #001F3E;
+
+    .link {
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            li {
+                padding-right: 2em;
+
+                a {
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+}
