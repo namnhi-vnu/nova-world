@@ -335,12 +335,14 @@ body {
   padding: 2em 1.8em;
   background-color: red;
   color: #fff;
-  border-radius: 50%;
   -webkit-transition: all linear 0.3s;
   transition: all linear 0.3s;
   -webkit-animation: text-flicker 3s linear infinite;
           animation: text-flicker 3s linear infinite;
   font-weight: 600;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  padding-bottom: 3.5em;
 }
 
 #singform:hover {

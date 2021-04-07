@@ -336,10 +336,12 @@ body {
     padding: 2em 1.8em;
     background-color: red;
     color: #fff;
-    border-radius: 50%;
+    //border-radius: 50%;
     transition: all linear 0.3s;
     animation: text-flicker 3s linear infinite;
     font-weight: 600;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    padding-bottom: 3.5em;
 
     &:hover {
         text-decoration: none;
